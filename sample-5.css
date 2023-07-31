@@ -1,0 +1,198 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+/*header*/
+.logo {
+    max-width: 50ch;
+    margin-left: 3.5em;
+    display: flex;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    justify-content: space-between;
+    padding: 1.1em 4.5%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    margin-right: 2.7em;
+    text-decoration: none;
+    color: black;
+}
+
+#title_cafe {
+    margin-left: 1.4em;
+    margin-right: 2.4em;
+    padding-left: 2.2em;
+    border-left: 1px solid #CFCACA;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: default;
+}
+
+#check_out {
+    border: 1px solid black;
+    background-color: #1E1E1E;
+    color: white;
+    width: 132px;
+    padding-top: 1.1em;
+    padding-bottom: 1.1em;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+/*main*/
+#latte_pic {
+    width: 35%;
+    min-height: 37%;
+    margin-top: 13.7em;
+    margin-left: 4.4em;
+    margin-right: 4.7em;
+    float: left;
+}
+
+main {
+    background-color: #F4F4F4;
+    border: 1px solid gray;
+    box-shadow: 4px 4px 5px gray;
+    border-radius: 3px;
+    padding-bottom: 8em;
+}
+
+h1 {
+    padding-top: 6.8em;
+    margin-bottom: 0.3em;
+    font-size: 2.3rem;
+    color: #302F2F;
+ }
+
+p {
+    white-space: pre;
+    font-size: 0.9rem;
+    color: #302F2F;
+    margin-bottom: 0.3em;
+}
+
+.context {
+    font-family: sans-serif;
+}
+
+#click-button {
+    border: 1px solid black;
+    background-color: #1E1E1E;
+    color: white;
+    width: 245px;
+    padding-top: 1.1em;
+    padding-bottom: 1.1em;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+/*footer*/
+h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 0.625em;
+    color: #302F2F;
+}
+
+.socmed {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fa-instagram {
+    background: linear-gradient(to bottom right, darkviolet, orange, #E761CC);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.fa-telegram {
+    background: #32ACE9;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.fa-brands {
+    cursor: pointer;
+}
+/*MEDIA QUERIES*/
+@media (max-width: 410px) {
+    .logo {
+        max-width: 30ch;
+        margin-left: 0;
+    }
+
+    header {
+        background-color: white;
+        width: 100%;
+        padding: 0.2em 1%;
+    }
+
+    ul {
+        font-size: 0.7rem;
+    }
+
+    li a {
+        margin-right: 0.8em;
+    }
+
+    #title_cafe {
+        margin-left: 0;
+        margin-right: 0.4em;
+        padding-left: 0.5em;
+        font-size: 0.7rem;
+    }
+
+    #check_out {
+        width: 60%;
+        font-size: 0.4rem;
+        letter-spacing: 1.5px;
+    } 
+    
+    #latte_pic {
+        width: 85%;
+        min-height: 37%;
+        margin: 10em 0 2em 2em;
+        float: left;
+    }
+
+    h1 {
+        text-align: center;
+     }
+
+    p {
+        white-space: normal;
+        text-align: center;
+    }
+}
